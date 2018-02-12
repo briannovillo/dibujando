@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.onlyaman.dibujando.DrawingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPencil"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="changePencil"
+            android:text="Lápiz" />
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="changeColor"
+            android:text="Color" />
+
+        <Button
+            android:id="@+id/btnStroke"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="changeStroke"
+            android:text="Trazo" />
+    </LinearLayout>
+
+</FrameLayout>
